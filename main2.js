@@ -83,5 +83,16 @@ function myResult(){
 
     }
 
+    if(inputTypeValue === "mg" && resultTypeValue === "ton"){
+        result.value = Number(input.value) * 1;
+    
+    }else if(inputTypeValue === "mg" && resultTypeValue === "kilograms"){
+        result.value = Number(input.value) * 1000;
+    
+    }else if(inputTypeValue === "mg" && resultTypeValue === "mg"){
+        result.value = input.value;
+
+    }
+
 
 }
